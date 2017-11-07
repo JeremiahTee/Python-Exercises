@@ -20,3 +20,9 @@ print(list)
 print(id(x))
 
 print('Lists are \'immutable\'. After adding elements to the list, list has same address')
+
+#error about tuples
+my_tuple = (1, [1,2])
+
+my_tuple[1] =+ [3,4]  #this will raise an error
+#however the value of my_tuple is still changed...
